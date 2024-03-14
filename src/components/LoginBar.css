@@ -1,0 +1,27 @@
+.login-bar {
+    background-color: #30c46e;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+
+    & a {
+        color: #fff;
+        text-decoration: none; /* Remove underline on normal state */
+        font-weight: bold;
+    }
+
+    & a:hover {
+        text-decoration: none; /* Remove underline on hover */
+    }
+}
+
+.login-button {
+    padding: 20px;
+}
+
+.home-button {
+    position: fixed; /* Set the home-button to absolute positioning */
+    top: 0;
+    left: 0; /* Align the home-button to the left edge */
+    padding: 10px;
+}

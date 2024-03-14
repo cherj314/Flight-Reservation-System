@@ -1,0 +1,102 @@
+/* SeatMap.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+li button:hover {
+    background-color: #45a049;
+}
+
+.link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.plane {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url('plane.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; /* Align top to prevent cropping from the top */
+    width: 1000px;
+    min-height: 1000px; /* Set minimum height */
+    margin: 0 auto;
+}
+
+
+.airplane {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 90px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.seat-map {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto; /* Centering the grid horizontally */
+    /* Adjust vertical alignment if necessary */
+}
+
+
+.seat {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.seat-details {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
